@@ -1,4 +1,4 @@
-import { Flex, Image } from '@chakra-ui/react';
+import { Flex, Image, Text } from '@chakra-ui/react';
 import { Navigation, Pagination, Autoplay, Keyboard } from 'swiper';
 import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react';
 
@@ -43,18 +43,19 @@ export function Slide() {
               src="/images/continent.svg"
               alt="continent"
             />
-          </Flex>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Flex w="full" justify="center" align="center">
-            <Image
-              w="100%"
-              h="100%"
-              display="block"
-              objectFit="cover"
-              src="/images/continent.svg"
-              alt="continent"
-            />
+            <Flex
+              position="absolute"
+              justify="center"
+              align="center"
+              flexDir="column"
+            >
+              <Text as="h1" fontSize="5xl" fontWeight="bold" color="light.text">
+                Europa
+              </Text>
+              <Text as="p" fontSize="2xl" fontWeight="bold" color="light.info">
+                O continente mais antigo.
+              </Text>
+            </Flex>
           </Flex>
         </SwiperSlide>
       </Swiper>
