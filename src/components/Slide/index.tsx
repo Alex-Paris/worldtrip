@@ -1,6 +1,6 @@
 import { Flex, Image } from '@chakra-ui/react';
 import { Navigation, Pagination, Autoplay, Keyboard } from 'swiper';
-import { Swiper, SwiperProps, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -9,16 +9,16 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+import styled from './slide.module.scss';
+
 const swiper: SwiperProps = {
+  className: styled.swiper,
   modules: [Navigation, Pagination, Autoplay, Keyboard],
   speed: 500,
-  keyboard: true,
   loop: true,
+  keyboard: true,
+  navigation: true,
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
   pagination: {
     clickable: true,
   },
@@ -35,57 +35,29 @@ const swiper: SwiperProps = {
 export function Slide() {
   return (
     <Flex w="full">
-      <Swiper style={{ width: '100%', height: '100%' }} {...swiper}>
-        <SwiperSlide
-          style={{
-            width: '1000px',
-            justifyContent: 'center',
-            alignItems: 'center',
-
-            textAlign: 'center',
-            fontSize: '18px',
-            background: '#fff',
-
-            display: 'flex',
-            justifyItems: 'center',
-            alignContent: 'center',
-          }}
-        >
+      <Swiper {...swiper}>
+        <SwiperSlide>
           <Flex w="full" justify="center" align="center">
             sss
-            {/* <Image
+            <Image
               w="100%"
               h="100%"
               display="block"
               objectFit="cover"
-              src="/airplane.svg"
-              alt="airplane"
-            /> */}
+              src="/images/continent.svg"
+              alt="continent"
+            />
           </Flex>
         </SwiperSlide>
-        <SwiperSlide
-          style={{
-            width: '1000px',
-            justifyContent: 'center',
-            alignItems: 'center',
-
-            textAlign: 'center',
-            fontSize: '18px',
-            background: '#fff',
-
-            display: 'flex',
-            justifyItems: 'center',
-            alignContent: 'center',
-          }}
-        >
+        <SwiperSlide>
           <Flex w="full" justify="center" align="center">
             <Image
               w="100%"
               h="100%"
               display="block"
               objectFit="cover"
-              src="/airplane.svg"
-              alt="airplane"
+              src="/images/continent.svg"
+              alt="continent"
             />
           </Flex>
         </SwiperSlide>

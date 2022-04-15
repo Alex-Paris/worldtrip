@@ -15,7 +15,7 @@ export default function Home() {
             w="full"
             h="sm"
             objectFit="cover"
-            src="/background.svg"
+            src="/images/background.svg"
             alt="background"
           />
           <Flex
@@ -44,7 +44,7 @@ export default function Home() {
                 h="xs"
                 marginTop="10.25rem"
                 marginLeft="auto"
-                src="/airplane.svg"
+                src="/images/airplane.svg"
                 alt="airplane"
               />
             </Flex>
@@ -62,7 +62,7 @@ export default function Home() {
               <Image
                 w="5.31rem"
                 h="5.31rem"
-                src="/airplane.svg"
+                src="/images/airplane.svg"
                 alt="airplane"
               />
               <Text
@@ -79,7 +79,7 @@ export default function Home() {
               <Image
                 w="5.31rem"
                 h="5.31rem"
-                src="/airplane.svg"
+                src="/images/airplane.svg"
                 alt="airplane"
               />
               <Text
@@ -96,7 +96,7 @@ export default function Home() {
               <Image
                 w="5.31rem"
                 h="5.31rem"
-                src="/airplane.svg"
+                src="/images/airplane.svg"
                 alt="airplane"
               />
               <Text
@@ -113,7 +113,7 @@ export default function Home() {
               <Image
                 w="5.31rem"
                 h="5.31rem"
-                src="/airplane.svg"
+                src="/images/airplane.svg"
                 alt="airplane"
               />
               <Text
@@ -130,7 +130,7 @@ export default function Home() {
               <Image
                 w="5.31rem"
                 h="5.31rem"
-                src="/airplane.svg"
+                src="/images/airplane.svg"
                 alt="airplane"
               />
               <Text
