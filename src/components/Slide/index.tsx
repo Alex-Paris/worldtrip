@@ -5,9 +5,6 @@ import { Swiper, SwiperSlide, SwiperProps } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/bundle';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 
 import styled from './slide.module.scss';
 
@@ -22,11 +19,11 @@ const swiper: SwiperProps = {
   pagination: {
     clickable: true,
   },
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true,
+  // },
 
   onSlideChange: () => console.log('slide change'),
   onSwiper: swiper => console.log(swiper),
@@ -38,7 +35,6 @@ export function Slide() {
       <Swiper {...swiper}>
         <SwiperSlide>
           <Flex w="full" justify="center" align="center">
-            sss
             <Image
               w="100%"
               h="100%"
