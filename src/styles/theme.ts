@@ -13,11 +13,18 @@ export const theme = extendTheme({
     body: 'Poppins',
   },
 
-  space: {
-    13: '3.25rem',
-  },
-
   semanticTokens: {
+    space: {
+      13: '3.25rem',
+      41: '10.25rem',
+    },
+
+    sizes: {
+      11: '2.87rem',
+      13: '3.125rem',
+      25: '6.25rem',
+    },
+
     colors: {
       // error: 'red.500',
       // success: 'green.500',

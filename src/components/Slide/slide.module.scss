@@ -1,7 +1,8 @@
-.swiper {
+.swiper,
+.swiperMobile {
   width: 100%;
-  height: 100%;
-  margin-bottom: 10rem;
+  height: 28.125rem;
+  margin-bottom: 2rem;
 
   // Unfortunately, classes of SwiperSlide Navigation it's being loaded with 'swiper/css/bundle',
   //after this scss file.
@@ -33,4 +34,14 @@
 
   --swiper-pagination-bullet-horizontal-gap: 6px;
   --swiper-pagination-bullet-inactive-opacity: 1;
+
+  &.swiperMobile {
+    height: 15.625rem;
+
+    --swiper-navigation-size: 1rem;
+    --swiper-pagination-bullet-width: 0.5rem;
+    --swiper-pagination-bullet-height: 0.5rem;
+
+    --swiper-pagination-bullet-horizontal-gap: 4px;
+  }
 }
